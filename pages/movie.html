@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
@@ -14,7 +18,7 @@
         <header>
             <nav>
                 <img src="../public/img/logo.png" alt="">
-                <div class="nav-center">
+                <div class="nav-center movie-search">
                     <input type="text" placeholder="search"> <i class="ri-search-line search"></i>
                 </div>
 
@@ -22,47 +26,30 @@
         </header>
 
         <section class="hero">
-            <div class="left-video">
-                <video controls
-                    src="../public/img/Pal Pal (Mashup) - Afusic x Talha Anjum x Taimoor Baig ft. Talwiinder _ Oyeitsnaru.mp4">
-                </video>
-            </div>
-
-            <div class="right-tittle">
-                <h1>Pal Pal (Mashup) - Afusic x Talha Anjum x Taimoor Baig ft. Talwiinder | Oyeitsnaru</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente mollitia soluta ratione quibusdam molestiae vitae rem maxime voluptas! Doloribus, aut.</p>
-            </div>
+            
 
         </section>
-   <!-- <section class="comment-section">
-            <p id="center">Comments</p>
+  <section class="comment-section">
+         
 
-            <div class="comment-box">
-                <input type="text" placeholder="Write a comment..." >
-                <button disabled>Post</button>
-            </div>
+            <form action="https://formspree.io/f/xzzyzbvp" method="POST">
+                <div class="inp-par">
+                    
 
-               <p id="center">email</p>
+                    <input type="text" placeholder="name" name="name">
+                    <input type="text" placeholder="email" name="email">
+                    <input type="text" placeholder="comment" name="comment">
+                </div>
 
-            <div class="comment-box">
-                <input type="text" placeholder="Write a comment..." >
-                <button disabled>submit</button>
-            </div>
-            </div> -->
-
-            <form action="">
-
-                <input type="text" placeholder="comment">
-               
-                <input type="text" placeholder="name">
-                <input type="text" placeholder="email">
-
-                 <button>submit</button>
+                <div>
+                     <button type="submit">submit</button>
+                </div>
                 
             </form>
         </section>
 
     </main>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

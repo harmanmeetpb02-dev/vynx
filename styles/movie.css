@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: "Vend Sans", sans-serif;
 }
 
 html,
@@ -13,6 +14,8 @@ body {
 main {
     width: 100%;
     height: 100%;
+    
+    padding: 2rem;
 }
 
 nav {
@@ -28,7 +31,9 @@ nav {
 img {
     height: 50px;
 }
-
+nav{
+    margin-right: 10px;
+}
 
 .nav-center {
     width: 100%;
@@ -47,10 +52,11 @@ img {
 }
 
 .hero {
+    margin-top: 60px;
+    flex-direction: column;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
     gap: 20px;
 
 }
@@ -58,8 +64,8 @@ img {
 
 
 .left-video video {
-    height: 40vw;
-    width: 45vw;
+    height: fit-content;
+    width: 100%;
 
 }
 
@@ -67,6 +73,7 @@ img {
     flex-direction: column;
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
 .right-tittle h1 {
@@ -77,29 +84,43 @@ img {
     font-size: 2vw;
 }
 
- form input {
-           
-       padding: 10px 20px;
-       margin: 5px;
+form{
+    margin-top: 50px;
+}
 
-        }
-
-
-.comment-section button{
-    margin-left: 10px;
-   padding: 10px 20px;
-   border-radius: 10px;
-   background: transparent;
-   /* border: 1px solid; */
-   border: none;
-   background-color: #F47555;
+form .inp-par input {
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+.inp-par {
+    display: flex;
+    flex-direction: column;
 }
 
 
-@media (min-width: 900px) {
+.comment-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    /* border: 1px solid; */
+    border: none;
+    background-color: #F47555;
+}
 
 
+@media (min-width: 700px) {
 
+    .inp-par{
+        display: block;
+    }
+    .hero{
+        flex-direction: row;
+    }
+.left-video video {
+    width: 40vw;
+}
 
     .nav-center {
         display: flex;
@@ -108,58 +129,58 @@ img {
         width: 40%;
     }
 
-       .comment-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            background-color: #2a2a2a;
-            padding: 10px 15px;
-            border-radius: 30px;
-        }
+    .comment-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: #2a2a2a;
+        padding: 10px 15px;
+        border-radius: 30px;
+    }
 
-        .comment-box input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            outline: none;
-            border-radius: 30px;
-            background-color: transparent;
-            color: white;
-        }
+    .comment-box input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        background-color: transparent;
+        color: white;
+    }
 
-        .comment-box button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 30px;
-            background-color: crimson;
-            color: white;
-            cursor: not-allowed;
-        }
+    .comment-box button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: crimson;
+        color: white;
+        cursor: not-allowed;
+    }
 
-        /* Static comments */
-        .user-comments {
-            margin-top: 30px;
-        }
+    /* Static comments */
+    .user-comments {
+        margin-top: 30px;
+    }
 
-        .comment-item {
-            background-color: #222;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
+    .comment-item {
+        background-color: #222;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
 
-        .comment-item h4 {
-            margin-bottom: 5px;
-            color: #ff5c5c;
-        }
+    .comment-item h4 {
+        margin-bottom: 5px;
+        color: #ff5c5c;
+    }
 
-        .comment-item p {
-            font-size: 0.95rem;
-            color: #dcdcdc;
-        }
+    .comment-item p {
+        font-size: 0.95rem;
+        color: #dcdcdc;
+    }
 
-      
+
 
 
 
