@@ -93,7 +93,7 @@ async function getmData() {
 
 function searchBar() {
     searchbar.addEventListener('click', () => {
-        window.location.href = "./index.html";
+        window.location.href = "index.html";
     })
 }
 
