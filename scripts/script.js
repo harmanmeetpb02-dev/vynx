@@ -11,7 +11,7 @@ let datas = [];
 //function
 async function getData() {
     try {
-        let res = await fetch("../data/data.json");
+        let res = await fetch("./data/data.json");
         let data = await res.json();
         data.forEach((item) => {
             datas.push(item);
