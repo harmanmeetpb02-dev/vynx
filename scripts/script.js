@@ -37,7 +37,7 @@ function showCards() {
         div.addEventListener("click", () => {
             localStorage.clear();
             localStorage.setItem("selectedMovie", item.no);
-            window.location.href = "./movie.html";
+            window.location.href = "./pages/movie.html";
         });
 
         cards.appendChild(div);
