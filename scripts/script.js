@@ -48,9 +48,21 @@ function searchinp() {
     cards.innerHTML = "";
     datas.filter((item) => {
         if (item.title.toLowerCase().startsWith(input.value.toLowerCase())) {
-            cards.innerHTML += `<div class="cards">
-                <img src="${item.image}" alt="">
-            </div>`;
+            const div = document.createElement("div");
+        div.classList.add("cards");
+
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.title || "movie poster";
+
+        div.appendChild(img);
+        div.addEventListener("click", () => {
+            localStorage.clear();
+            localStorage.setItem("selectedMovie", item.no);
+            window.location.href = "./pages/movie.html";
+        });
+
+        cards.appendChild(div);
         }
     })
 }
@@ -91,12 +103,12 @@ async function getmData() {
     }
 }
 
-function searchBar() {
+if (searchbar) {
     searchbar.addEventListener('click', () => {
         window.location.href = "index.html";
-    })
+    });
 }
 
+
 //function call
-searchBar();
 getmData();
